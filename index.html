@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Contact Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 flex items-center justify-center min-h-screen px-4">
+
+  <div class="max-w-sm w-full bg-green-800 rounded-xl overflow-hidden shadow-lg">
+    <!-- Header with Sign Up -->
+    <div class="flex justify-between items-center px-4 py-3">
+      <h1 class="text-white font-semibold text-lg">yourname.card</h1>
+      <button class="text-sm bg-green-700 text-white px-3 py-1 rounded hover:bg-green-600">
+        Sign Up Free
+      </button>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="bg-green-100 rounded-xl mx-4 mt-2">
+      <!-- Image -->
+      <img 
+        src="your-photo.jpg" 
+        alt="Profile" 
+        class="rounded-t-xl w-full h-60 object-cover"
+      />
+      
+      <!-- Info -->
+      <div class="p-4 text-left">
+        <h2 class="text-xl font-bold text-gray-900">Cindy Crawford</h2>
+        <p class="text-gray-700 text-sm">Manager, Product Management at</p>
+        <p class="text-sm font-semibold text-green-800">CBRE Hamburg</p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex justify-between items-center gap-3 p-4 bg-white">
+      <a 
+        href="contact.vcf" 
+        download 
+        class="flex-1 bg-green-900 text-white py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-green-800 transition"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12v6m0 0l-3-3m3 3l3-3M12 4v8" />
+        </svg>
+        <span class="text-sm font-medium">Save Contact</span>
+      </a>
+
+      <button 
+        class="flex-1 bg-green-600 text-white py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-green-500 transition"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2v-2m6-10h-2a2 2 0 00-2 2v8a2 2 0 002 2h2m-6-6h.01" />
+        </svg>
+        <span class="text-sm font-medium">Exchange Contact</span>
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
