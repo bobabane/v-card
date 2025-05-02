@@ -6,9 +6,9 @@
   <title>Digital Contact Card</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-green-900 flex items-center justify-center min-h-screen">
+<body class="bg-green-900 flex items-center justify-center h-screen max-h-screen">
 
-  <div class="w-full h-screen bg-green-800 rounded-xl overflow-hidden shadow-lg flex flex-col justify-between">
+  <div class="w-full h-screen bg-green-800 rounded-xl overflow-hidden shadow-lg flex flex-col justify-between max-w-[600px]">
     <!-- Header with Sign Up -->
       <div>
     <div class="flex justify-between items-center px-4 py-3 mt-20">
@@ -16,10 +16,10 @@
     </div>
 
     <!-- Profile Card -->
-    <div class="bg-green-100 rounded-xl mx-4 mt-2">
+    <div class="bg-green-100 rounded-xl mx-auto mt-2 max-w-[400px]">
       <!-- Image -->
       <img 
-        src="your-photo.jpg" 
+        src="peter.jpg" 
         alt="Profile" 
         class="rounded-t-xl w-full h-60 object-cover"
       />
@@ -27,11 +27,12 @@
       <!-- Info -->
       <div class="p-4 text-left">
         <h2 class="text-xl font-bold text-gray-900">Peter Park</h2>
-        <p class="text-gray-700 text-sm">Manager, Product Management at</p>
+        <p class="text-gray-700 text-sm">Senior Technical Writer at</p>
         <img src="AMD_Logo.png" alt="AMD logo" class="w-1/2 py-2" />
         <p class="text-sm font-semibold text-green-800">Advanced Micro Devices, Inc.</p>
       </div>
     </div>
+
       </div>
 
       <div>
@@ -52,11 +53,12 @@
 
       <button 
         class="flex-1 bg-green-900 text-white py-2 rounded-lg flex items-center justify-center gap-2 hover:bg-green-800 transition"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 rotate-90" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v8a2 2 0 01-2 2h-8a2 2 0 01-2-2v-2m6-10h-2a2 2 0 00-2 2v8a2 2 0 002 2h2m-6-6h.01" />
+        style="background-color:#0077B7;"
+        >
+        <svg class="w-5 h-5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 382 382" xml:space="preserve">
+        <path style="fill:#ffffff" d="M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889  C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056  H65.345c-5.554,0-10.056-4.502-10.056-10.056V150.403c0-5.554,4.502-10.056,10.056-10.056h42.806  c5.554,0,10.056,4.502,10.056,10.056V329.844z M86.748,123.432c-22.459,0-40.666-18.207-40.666-40.666S64.289,42.1,86.748,42.1  s40.666,18.207,40.666,40.666S109.208,123.432,86.748,123.432z M341.91,330.654c0,5.106-4.14,9.246-9.246,9.246H286.73  c-5.106,0-9.246-4.14-9.246-9.246v-84.168c0-12.556,3.683-55.021-32.813-55.021c-28.309,0-34.051,29.066-35.204,42.11v97.079  c0,5.106-4.139,9.246-9.246,9.246h-44.426c-5.106,0-9.246-4.14-9.246-9.246V149.593c0-5.106,4.14-9.246,9.246-9.246h44.426  c5.106,0,9.246,4.14,9.246,9.246v15.655c10.497-15.753,26.097-27.912,59.312-27.912c73.552,0,73.131,68.716,73.131,106.472  L341.91,330.654L341.91,330.654z"/>
         </svg>
-        <span class="text-sm font-medium">Exchange Contact</span>
+        <span class="text-sm font-medium">LinkedIn</span>
       </button>
     </div>
   </div>
